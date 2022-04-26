@@ -44,7 +44,7 @@ class SampleApp(tk.Tk):
 class SignIn(tk.Frame):
 
     def __init__(self, parent, controller):
-        tk.Frame.__init__(self, parent, bg='#33334d')
+        tk.Frame.__init__(self, parent, bg='#14324d')
         self.controller = controller
 
         self.controller.title('Achban Bank')
@@ -55,18 +55,18 @@ class SignIn(tk.Frame):
         headingLabel1 = tk.Label(self,
                                  text='Achban Bank ATM',
                                  font=('Arial', 40, 'bold'),
-                                 foreground='#cc5c1b',
-                                 background='#33334d')
+                                 foreground='#944c00',
+                                 background='#14324d')
         headingLabel1.pack(pady=25)
 
-        space_label = tk.Label(self, height=4, bg='#33334d')
+        space_label = tk.Label(self, height=4, bg='#14324d')
         space_label.pack()
 
         ID_Label2 = tk.Label(self,
                              text='Enter your card number',
                              font=('Arial', 13),
                              foreground='white',
-                             background='#33334d')
+                             background='#14324d')
         ID_Label2.pack(pady=10)
 
         my_id = tk.StringVar()
@@ -98,7 +98,7 @@ class SignIn(tk.Frame):
                                   text='',
                                   font=('Arial', 13),
                                   fg='white',
-                                  bg='#29293d',
+                                  bg='#154670',
                                   anchor='n')
         wrong_id_label.pack(fill='both', expand=True)
 
@@ -134,7 +134,7 @@ class SignIn(tk.Frame):
 class pinPage(tk.Frame):
 
     def __init__(self, parent, controller):
-        tk.Frame.__init__(self, parent, bg='#33334d')
+        tk.Frame.__init__(self, parent, bg='#14324d')
         self.controller = controller
 
         self.controller.title('Achban Bank')
@@ -145,18 +145,18 @@ class pinPage(tk.Frame):
         headingLabel1 = tk.Label(self,
                                  text='Achban Bank ATM',
                                  font=('Arial', 40, 'bold'),
-                                 foreground='#cc5c1b',
-                                 background='#33334d')
+                                 foreground='#944c00',
+                                 background='#14324d')
         headingLabel1.pack(pady=25)
 
-        space_label = tk.Label(self, height=4, bg='#33334d')
+        space_label = tk.Label(self, height=4, bg='#14324d')
         space_label.pack()
 
         ID_Label2 = tk.Label(self,
                              text='Enter your pin number',
                              font=('Arial', 13),
                              foreground='white',
-                             background='#33334d')
+                             background='#14324d')
         ID_Label2.pack(pady=10)
 
         my_pin = tk.StringVar()
@@ -192,7 +192,7 @@ class pinPage(tk.Frame):
                                    text='',
                                    font=('Arial', 13),
                                    fg='white',
-                                   bg='#29293d',
+                                   bg='#154670',
                                    anchor='n')
         wrong_pin_label.pack(fill='both', expand=True)
 
@@ -228,32 +228,32 @@ class pinPage(tk.Frame):
 class MenuPage(tk.Frame):
 
     def __init__(self, parent, controller):
-        tk.Frame.__init__(self, parent, bg='#33334d')
+        tk.Frame.__init__(self, parent, bg='#14324d')
         self.controller = controller
 
         headingLabel1 = tk.Label(self,
                                  text='Hello Fasil Mulatu, Welcome to Achban Bank.',
                                  font=('Arial', 40, 'bold'),
-                                 foreground='#cc5c1b',
-                                 background='#33334d')
+                                 foreground='#944c00',
+                                 background='#14324d')
         headingLabel1.pack(pady=25)
 
         options_label = tk.Label(self,
                                  text='Option Menu',
                                  font=('Arial', 13),
                                  foreground='white',
-                                 background='#33334d')
+                                 background='#14324d')
         options_label.pack()
 
         selections_label = tk.Label(self,
                                     text='Please make a selection',
                                     font=('Arial', 13),
                                     foreground='white',
-                                    background='#33334d',
+                                    background='#14324d',
                                     anchor='w')
         selections_label.pack(fill='x')
 
-        button_frame = tk.Frame(self, bg="#29293d")
+        button_frame = tk.Frame(self, bg="#154670")
         button_frame.pack(fill='both', expand=True)
 
         def withdraw():
@@ -336,7 +336,7 @@ class MenuPage(tk.Frame):
 class WithdrawPage(tk.Frame):
 
     def __init__(self, parent, controller):
-        tk.Frame.__init__(self, parent, bg='#33334d')
+        tk.Frame.__init__(self, parent, bg='#14324d')
         self.controller = controller
 
         self.controller.title('Achban Bank')
@@ -347,25 +347,25 @@ class WithdrawPage(tk.Frame):
         headingLabel1 = tk.Label(self,
                                  text='Achban Bank ATM',
                                  font=('Arial', 40, 'bold'),
-                                 foreground='#cc5c1b',
-                                 background='#33334d')
+                                 foreground='#944c00',
+                                 background='#14324d')
         headingLabel1.pack(pady=25)
 
         withdrawl_label = tk.Label(self,
                                    text='Withdraw Menu',
                                    font=('Arial', 13),
                                    foreground='white',
-                                   background='#33334d')
+                                   background='#14324d')
         withdrawl_label.pack()
 
         amount_label = tk.Label(self,
                                 text='Select the amount you would like to withdraw',
                                 font=('Arial', 14),
                                 fg='white',
-                                bg='#33334d')
+                                bg='#14324d')
         amount_label.pack(pady=5)
 
-        button_frame = tk.Frame(self, bg='#29293d')
+        button_frame = tk.Frame(self, bg='#154670')
         button_frame.pack(fill='both', expand=True)
 
         def withdraw(amount):
@@ -448,7 +448,7 @@ class WithdrawPage(tk.Frame):
                                      text='other amount',
                                      font=('Arial', 15),
                                      fg='#FFFFFF',
-                                     bg='#29293d')
+                                     bg='#154670')
 
         other_entry_label.grid(row=4, column=1, pady=2, ipady=3)
 
@@ -493,31 +493,31 @@ class WithdrawPage(tk.Frame):
 class DepositPage(tk.Frame):
 
     def __init__(self, parent, controller):
-        tk.Frame.__init__(self, parent, bg='#33334d')
+        tk.Frame.__init__(self, parent, bg='#14324d')
         self.controller = controller
 
         headingLabel1 = tk.Label(self,
                                  text='Achban Bank ATM',
                                  font=('Times New Roman', 40, 'bold'),
-                                 foreground='#cc5c1b',
-                                 background='#33334d')
+                                 foreground='#944c00',
+                                 background='#14324d')
         headingLabel1.pack(pady=25)
 
         headingLabel2 = tk.Label(self,
                                  text='Deposit Menu',
                                  font=('Times New Roman', 15),
                                  foreground='white',
-                                 bg='#33334d')
+                                 bg='#14324d')
         headingLabel2.pack(pady=4)
 
-        space_label = tk.Label(self, height=4, bg='#33334d')
+        space_label = tk.Label(self, height=4, bg='#14324d')
         space_label.pack()
 
         enter_amount = tk.Label(self,
                                 text='Enter deposit amount',
                                 font=('Arial', 13),
                                 foreground='white',
-                                background='#33334d')
+                                background='#14324d')
         enter_amount.pack(pady=10)
 
         cash = tk.StringVar()
@@ -543,7 +543,7 @@ class DepositPage(tk.Frame):
                                  height=2)
         enter_button.pack(pady=10)
 
-        two_tone_label = tk.Label(self, bg='#29293d')
+        two_tone_label = tk.Label(self, bg='#154670')
         two_tone_label.pack(fill='both', expand=True)
 
         bottom_frame = tk.Frame(self, relief='raised', borderwidth=3)
@@ -578,21 +578,21 @@ class DepositPage(tk.Frame):
 class BalancePage(tk.Frame):
 
     def __init__(self, parent, controller):
-        tk.Frame.__init__(self, parent, bg='#33334d')
+        tk.Frame.__init__(self, parent, bg='#14324d')
         self.controller = controller
 
         headingLabel1 = tk.Label(self,
                                  text='Achban Bank ATM',
                                  font=('Times New Roman', 40, 'bold'),
-                                 foreground='#cc5c1b',
-                                 background='#33334d')
+                                 foreground='#944c00',
+                                 background='#14324d')
         headingLabel1.pack(pady=25)
 
         headingLabel2 = tk.Label(self,
                                  text='Balance',
                                  font=('Times New Roman', 20),
                                  foreground='white',
-                                 bg='#33334d')
+                                 bg='#14324d')
         headingLabel2.pack(pady=4)
 
         global current_balance
@@ -603,11 +603,11 @@ class BalancePage(tk.Frame):
                                  textvariable=controller.shared_data["Balance"],
                                  font=("Arial", 13),
                                  fg='white',
-                                 bg="#33334d",
+                                 bg="#14324d",
                                  anchor='c')
         balance_label.pack(fill='x')
 
-        button_frame = tk.Frame(self, bg='#29293d')
+        button_frame = tk.Frame(self, bg='#154670')
         button_frame.pack(fill='both', expand=True)
 
         def menu():
@@ -623,16 +623,16 @@ class BalancePage(tk.Frame):
         menu_button.grid(row=0, column=0, pady=5)
 
         def exit():
-            controller.show_frame('StartPage')
+            controller.show_frame('SignIn')
 
         exit_button = tk.Button(button_frame,
-                                text='Exit',
+                                text='EXIT',
                                 command=exit,
                                 relief='raised',
                                 borderwidth=3,
                                 width=50,
                                 height=5)
-        exit_button.grid(row=1, column=0, pady=5)
+        exit_button.grid(row=4, column=0, pady=5)
 
         bottom_frame = tk.Frame(self, relief='raised', borderwidth=3)
         bottom_frame.pack(fill='x', side='bottom')
