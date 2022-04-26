@@ -1,5 +1,9 @@
 # ATM
 Python ATM GUI!
 
-With Help from @iamcodefoxx
-https://www.youtube.com/watch?v=SF-enJWjekY&t=1s
+Sign in - Id and pin
+Withdrawd - multiple and custom amounts
+Deposit - allows amount entry
+Balance - Check current balance 
+
+Comming soon - Balance wont restart when program ends!
